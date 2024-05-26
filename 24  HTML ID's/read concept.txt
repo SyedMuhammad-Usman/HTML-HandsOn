@@ -1,0 +1,6 @@
+Issues with Non-Unique IDs
+Using the same id for multiple elements can cause several issues:
+
+CSS Styling: The CSS rule #testingID { padding: 40px; } will apply to both elements, which may not be the desired outcome.
+JavaScript Selection: Methods like document.getElementById('testingID') will return the first element it finds with that id, making it difficult or impossible to select the second one directly.
+Accessibility and SEO: Non-unique ids can cause problems with accessibility tools and search engines, which rely on the uniqueness of IDs to navigate and index the content correctly.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form method="post" action="some_page.html">
+
+        <!-- text input -->
+        <div>
+            <label for="Username">username:</label>
+            <input type="text" name="Username" value="Usman" id="userame" placeholder="Enter your username" required>
+        </div>
+
+        <!-- password input -->
+        <div>
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password"
+            placeholder="Enter your password" pattern="[a-zA-Z0-9]+" title="password must contain upper and lower case letters and digit" required autofocus>
+        </div>
+
+        <!-- checkbox input-->
+        <div>
+            <input type="checkbox" name="checkbox" id="checkbox" value="Remember?">
+            <label for="checkbox">Remember me</label>
+        </div>
+
+        <!-- radio buttonUse the name attribute to identify form data when it's submitted to the server.
+Use the value attribute to specify the data that should be sent to the server for inputs like radio buttons, checkboxes, and select options. For text inputs, value can be used to pre-fill the field. input-->
+        <div>
+            <!-- use when we have select one from many options so the name fin all input must me same  -->
+            <!-- id is use to select one by clicking on lable text -->
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <!-- value Attribute
+                value="male" and value="female"
+Reason: Determines what data is submitted to the server when the form is processed. This value is crucial for identifying which option the user selected. -->
+        </div>
+
+        <!-- dropdown -->
+        <div>
+            <label for="brands">Select brand</label>
+            <select name="brands" id="brands">
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="google">Google</option>
+            </select>
+        </div>
+        <!-- textarea -->
+        <div>
+            <label for="comment">Enter your comment here</label><br>
+            <textarea name="comment" id="comment" rows="5" cols="20" placeholder="comment here
+            and white space does matter here
+            "></textarea>
+        </div>
+        <!-- submit button -->
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+
+
+        <!-- Use the name attribute to identify form data when it's submitted to the server.
+Use the value attribute to specify the data that should be sent to the server for inputs like radio buttons, checkboxes, and select options. For text inputs, value can be used to pre-fill the field. -->
+</body>
+</html>

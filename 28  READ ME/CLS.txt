@@ -1,0 +1,18 @@
+What is CLS?
+Cumulative Layout Shift (CLS) is a metric used to measure how much a webpage's layout unexpectedly shifts while it's loading. These shifts can happen when elements like images, ads, or fonts load later and push the content around, which can be annoying for users.
+
+Why is CLS Important?
+User Experience: Unexpected shifts can make a website feel unstable and can cause users to click the wrong buttons or links.
+SEO: Google uses CLS as part of its ranking criteria, so a lower CLS score can help improve your site's search engine ranking.
+How is CLS Calculated?
+CLS is calculated based on the size and movement of elements on the screen during the loading process. The score is determined by how much visible content shifts and how much of the viewport is affected.
+
+How to Improve CLS?
+Set Size for Media: Always include width and height attributes for images and videos.
+Reserve Space: Allocate space for ads and other dynamic content.
+Avoid Inserting Content Above Existing Content: Try not to add new elements above content that's already been displayed, unless the user is interacting with the page.
+Example
+High CLS: If an image loads late and pushes down text that the user was reading, this causes a shift.
+Low CLS: If an image placeholder is used, the layout remains stable even when the image loads.
+
+By focusing on reducing CLS, you can make your website more stable and improve the overall user experience.

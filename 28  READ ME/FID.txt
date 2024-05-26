@@ -1,0 +1,18 @@
+First Input Delay (FID)
+What is FID?
+
+FID measures the time it takes for a webpage to respond to the first user interaction (like clicking a link, tapping a button, or entering text) after it has loaded.
+Why it matters:
+
+A low FID means the page is quickly interactive, providing a better user experience.
+A high FID can frustrate users, making the site feel slow and unresponsive.
+How to improve it:
+
+Reduce JavaScript execution time: Optimize and defer non-essential scripts.
+Break up long tasks: Split up long-running tasks to keep the main thread free.
+Use browser features like lazy loading: Load images and other resources only when needed.
+Improve server response times: Optimize server performance to reduce delays.
+Example:
+
+High FID: A user clicks a button, but it takes a noticeable time before the page responds.
+Low FID: A user clicks a button, and the page responds almost immediately.
